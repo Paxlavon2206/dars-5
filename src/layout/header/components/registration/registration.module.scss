@@ -1,0 +1,53 @@
+
+
+.auth_block{
+    max-width: 276px;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.registration{
+    color: rgb(63, 81, 181);
+    font-family: Cairo;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    border-radius: 14px;
+    width: 50px;
+    height: 48px;
+    border-color: transparent;
+background-color: rgb(238, 244, 255);
+}
+.btn{
+    gap: 12px;
+    color: rgb(255, 255, 255);
+font-family: Cairo;
+font-size: 18px;
+font-weight: 700;
+line-height: 34px;
+letter-spacing: 0%;
+text-align: left;
+border-radius: 14px;
+background-color: rgb(63, 81, 181);
+width: 151px;
+height: 48px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 7px 24px 7px 24px;
+border: none;
+
+}
+.btn_p::before{
+    content: "";
+    background-image: url("/kirish.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+height: 20.53px;
+}
