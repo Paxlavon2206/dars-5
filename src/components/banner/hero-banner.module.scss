@@ -1,0 +1,31 @@
+
+
+.title{
+    transform: translateY(-13px);
+    color: rgb(36, 36, 36);
+font-family: Cairo;
+font-size: 20px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0%;
+}
+.img{
+z-index: -1;
+}
+  
+.service_title{
+    z-index: 3;
+color: rgb(255, 255, 255);
+font-family: Cairo;
+font-size: 18px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0%;
+transform: translateY(-60px);
+width: 170px;
+margin-right: auto;
+margin-left: auto;
+}
+.news__title{
+    margin-bottom: 0;
+}

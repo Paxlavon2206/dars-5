@@ -5,6 +5,16 @@ body {
   padding: 0 20px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0%;
+  padding: 0%;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -27,18 +37,133 @@ a {
   text-decoration: none;
 }
 
+.hero{
+  padding-bottom: 56px;}
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .first__block {
+  z-index: -1;
   position: relative;
   background-image: url("/hero-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 287px;
-  height: 274.52px;
+  background-position: 0 167px;
+  background-size: 25%;
   border-radius: 12px;
   background-color: rgb(238, 244, 255);
   padding-top: 20px;
+  max-width: 1000px;
 }
-.hero__title{
+.hero__title {
   position: absolute;
-  top: -10px;
+  padding: 0;
+  transform: translateX(30px);
+}
+.hero__banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 596px;
+  text-align: center;
+  transform: translateX(300px);
+}
+.single_card {
+  max-width: 200px;
+  height: 351;
+  border-radius: 12px;
+  background-color: rgb(63, 81, 181);
+  padding: 32px 24px 38px 22px;
+}
+
+.single_title {
+  color: rgb(255, 255, 255);
+  font-family: Cairo;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.single__cap {
+  color: rgb(255, 255, 255);
+  font-family: Cairo;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.single__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  border-radius: 14px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.single_btn_p {
+  color: rgb(36, 36, 36);
+  font-family: Cairo;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: left;
+  /* Кириш */
+  position: static;
+  width: 126px;
+  height: 34px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 24px 7px 12px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 12px;
+}
+.service{
+  padding-bottom: 40px;
+}
+.service__container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.category_container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.title_ruknlar{
+  margin-bottom: 32px;
+  color: rgb(36, 36, 36);
+font-family: Cairo;
+font-size: 32px;
+font-weight: 600;
+line-height: 40px;
+letter-spacing: 0%;
+text-align: left;
+}
+.top_content{
+  margin-bottom: 32px;
+}
+
+.news_cards{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.audio{
+  padding-top: 60px;
 }
