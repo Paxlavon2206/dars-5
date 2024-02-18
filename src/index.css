@@ -24,7 +24,12 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
-
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
 button {
   cursor: pointer;
 }
@@ -37,8 +42,9 @@ a {
   text-decoration: none;
 }
 
-.hero{
-  padding-bottom: 56px;}
+.hero {
+  padding-bottom: 56px;
+}
 .hero__container {
   display: flex;
   align-items: center;
@@ -131,39 +137,45 @@ a {
   flex-grow: 0;
   margin: 0px 12px;
 }
-.service{
+.service {
   padding-bottom: 40px;
 }
-.service__container{
+.service__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.category_container{
+.category_container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
 }
-.title_ruknlar{
+.title_ruknlar {
   margin-bottom: 32px;
   color: rgb(36, 36, 36);
-font-family: Cairo;
-font-size: 32px;
-font-weight: 600;
-line-height: 40px;
-letter-spacing: 0%;
-text-align: left;
+  font-family: Cairo;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
 }
-.top_content{
+.top_content {
   margin-bottom: 32px;
 }
 
-.news_cards{
+.news_cards {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 24px;
 }
 
-.audio{
+.audio {
   padding-top: 60px;
+  padding-bottom: 93px;
+}
+
+.footer {
+  padding-top: 30px;
+  background-color: rgb(238, 244, 255);
 }

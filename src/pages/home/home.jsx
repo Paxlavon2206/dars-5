@@ -54,17 +54,17 @@ export const Home = () => {
         <div className="top_content">
         <h2>Янги қўшилганлар</h2>
         </div>
-        <div className="news_cards">
-        {newsData.map((item)=> <NewsCard key={item.name} img={item.img} title={item.title} info={item.info} rating={item.rating}/>)}
-        </div>
+        <Link to={`/${item.id}`} className="news_cards">
+        {newsData.map((item)=> <NewsCard key={item.id} img={item.img} title={item.title} info={item.info} rating={item.rating}/>)}
+        </Link>
       </section>
       <section className='audio'>
         <div className="top_content">
         <h2>Аудио китоблар</h2>
         </div>
-        <div className="news_cards">
+        <Link to={`/${item.id}`} className="news_cards">
         {audioData.map((item)=> <NewsCard key={item.name} img={item.img} title={item.title} info={item.info} rating={item.rating}/>)}
-        </div>
+        </Link>
       </section>
 
     </MainLayout>
