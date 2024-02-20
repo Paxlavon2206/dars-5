@@ -8,7 +8,8 @@ import { ServiceCard } from '../../components/service/service-card.jsx'
 import { CategoryCard } from '../../components/banner/category-card.jsx'
 import { NewsCard } from '../../components/banner/news-card.jsx'
 import { audioData } from '../../../src/data/home-data.js'
-
+import { Link } from 'react-router-dom'
+import { Audio } from '../../components/banner/audio.jsx'
 
 export const Home = () => {
   return (
@@ -54,17 +55,17 @@ export const Home = () => {
         <div className="top_content">
         <h2>Янги қўшилганлар</h2>
         </div>
-        <Link to={`/${item.id}`} className="news_cards">
-        {newsData.map((item)=> <NewsCard key={item.id} img={item.img} title={item.title} info={item.info} rating={item.rating}/>)}
-        </Link>
+        <div className="news_cards">
+        {newsData.map((item)=> <Link to={`/${item.id}`}> <NewsCard key={item.id} img={item.img} title={item.title} info={item.info} rating={item.rating}/></Link>)}
+        </div>
       </section>
       <section className='audio'>
         <div className="top_content">
         <h2>Аудио китоблар</h2>
         </div>
-        <Link to={`/${item.id}`} className="news_cards">
-        {audioData.map((item)=> <NewsCard key={item.name} img={item.img} title={item.title} info={item.info} rating={item.rating}/>)}
-        </Link>
+        <div className="news_cards">
+        {audioData.map((item)=> <Link to={`/${item.id}`}> <Audio key={item.id} img={item.img} title={item.title} info={item.info} rating={item.rating}/> </Link>)}
+        </div>
       </section>
 
     </MainLayout>
